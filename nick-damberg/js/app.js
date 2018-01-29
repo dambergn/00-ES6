@@ -1,6 +1,6 @@
 'use strict';
 
-let names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
+const names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
 
 let allProducts = [];
 let container = document.getElementById('image_container');
@@ -35,8 +35,8 @@ function displayPics(){
     }
   }
   console.log(rando);
-  // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
-  // When chaging var rando to let rando the system gives error rando not defined.  The only reason I can guess is the fact that it is trying to call a function.
+  // TODONE: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
+  // When chaging var rando to let rando the system gives error rando not defined.  var is a global variable while let remains inside the function and not accessable by the rest of the code.
   console.log(viewed)
 
   // To the DOM and beyond!
